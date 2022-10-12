@@ -38,7 +38,7 @@ namespace ApiDcBell.Controllers
             return Created("Created", true);
         }
 
-        [HttpPut("id")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProduct([FromBody] Product product, string id)
         {
             if (product == null)
@@ -56,7 +56,7 @@ namespace ApiDcBell.Controllers
             return Created("Created", true);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public async Task<IActionResult> DeleteProduct(string id)
         {
