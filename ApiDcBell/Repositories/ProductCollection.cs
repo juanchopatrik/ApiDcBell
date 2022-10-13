@@ -32,6 +32,7 @@ namespace ApiDcBell.Repositories
                 new BsonDocument { { "_id", new ObjectId(id) } }).Result.FirstAsync();
         }
 
+
         public async Task InsertProduct(Product product)
         {
             await Collection.InsertOneAsync(product);

@@ -15,5 +15,6 @@ namespace ApiDcBell.Repositories
         Task<Product> GetProductById(string id);
 
         Task<List<Product>> GetAllProducts();
+       
     }
 }
