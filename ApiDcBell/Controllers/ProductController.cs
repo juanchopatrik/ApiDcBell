@@ -10,6 +10,7 @@ namespace ApiDcBell.Controllers
     {
         private IProductCollection db = new ProductCollection();
 
+
         [HttpGet]
         public async Task<IActionResult> GetallProducts()
         {
@@ -62,7 +63,7 @@ namespace ApiDcBell.Controllers
         {
             await db.DeleteProduct(id);
 
-            return NoContent();
+            return Created("Deleted", true);
         }
     }
 }
