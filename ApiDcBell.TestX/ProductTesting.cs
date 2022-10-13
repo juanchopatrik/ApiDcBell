@@ -28,8 +28,6 @@ namespace ApiDcBell.TestX
 
         }
 
-
-
         [Fact]
         public void Get_Ok()
         {
@@ -58,7 +56,7 @@ namespace ApiDcBell.TestX
         [Fact]
         public void UpdateById_Ok()
         {
-            product2.Category = "mockTest updated";
+            product2.Description = "mockTest updated";
             var result = _controller.UpdateProduct(product2, product1.Id.ToString());
             Assert.True(true, "Created");
         }

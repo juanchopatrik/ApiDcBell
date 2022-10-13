@@ -29,7 +29,7 @@ namespace ApiDcBell.Controllers
             if (product == null)
                 return BadRequest();
 
-            if(product.Name == string.Empty)
+            if(product.Title == string.Empty)
             {
                 ModelState.AddModelError("Name", "The product shouldn't be empty");
             }
@@ -45,7 +45,7 @@ namespace ApiDcBell.Controllers
             if (product == null)
                 return BadRequest();
 
-            if (product.Name == string.Empty)
+            if (product.Title == string.Empty)
             {
                 ModelState.AddModelError("Name", "The product shouldn't be empty");
             }
